@@ -3,7 +3,7 @@
 InFace is a fast and smart face-scanning web tool that detects your **age**, **gender**, and **emotion** in real-time using your camera. It’s fully client-side and works instantly — no downloads, no signup, just AI-powered insights directly on your face.
 
 🌐 **Live Demo**  
-🔗 [View Live Site](https://alihaider-dev01.github.io/inface)
+🔗 [View Live Site](https://alihaider-dev01.github.io/InFace/)
 
 ---
 
@@ -91,7 +91,7 @@ InFace is more than a demo — it’s a **showcase of applied AI skills** in act
 
 ## 🔗 Live Demo
 
-> 🎥 Try the scanner right now: https://alihaider-dev01.github.io/inface)
+> 🎥 Try the scanner right now: https://alihaider-dev01.github.io/InFace/
 
 ---
 
