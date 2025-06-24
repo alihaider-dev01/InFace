@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InFace - Real-Time Face Scanner</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- MediaPipe FaceMesh, Face Detection & Camera Utils -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/face_mesh.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection@0.4/face_detection.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+  <!-- Your script.js -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Start Screen -->
+  <div class="screen" id="start-screen">
+    <h1>InFace 🚀</h1>
+    <p>Real-time face scanning</p>
+    <button id="start-btn">Start Scan</button>
+  </div>
+
+  <!-- Camera Screen -->
+  <div class="screen" id="camera-screen" style="display:none;">
+    <p class="description">Exploring the boundaries of AI and browser-based vision systems, this project detects age, gender, and emotion in real-time. A hands-on experiment in merging deep learning with clean frontend execution.</p>
+    <div class="video-containers">
+      <!-- Box Detection Screen -->
+      <div class="video-container">
+        <video id="video-box" width="320" height="240" autoplay muted playsinline></video>
+        <canvas id="canvas-box" width="320" height="240"></canvas>
+      </div>
+      <!-- Dots Detection Screen -->
+      <div class="video-container">
+        <video id="video-dots" width="320" height="240" autoplay muted playsinline></video>
+        <canvas id="canvas-dots" width="320" height="240"></canvas>
+      </div>
+    </div>
+    <!-- Result Box (Footer) -->
+    <div id="result-box">
+      <p id="emotion-result">Emotion: …</p>
+      <p id="age-result">Age: …</p>
+      <p id="gender-result">Gender: …</p>
+      <p id="ai-comment">Awaiting face…</p>
+    </div>
+    <button id="back-btn">Back</button>
+  </div>
+</body>
+</html>
